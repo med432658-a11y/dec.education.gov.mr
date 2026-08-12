@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relevés des notes du BAC</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+            direction: ltr;
+        }
+
+        /* Navbar Header */
+        .navbar {
+            background-color: #00a859;
+            color: white;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .navbar-brand img {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+            border-radius: 50%; /* تجعل الحواف دائرية تناسب الشعارات الدائرية */
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 15px;
+            font-size: 14px;
+        }
+
+        .navbar-links a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .page-title {
+            font-size: 28px;
+            font-weight: 300;
+            color: #555;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 10px;
+        }
+
+        /* Details List */
+        .details-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+        }
+
+        .label {
+            width: 35%;
+            text-align: right;
+            padding-right: 15px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .value {
+            width: 65%;
+            text-align: left;
+            padding-left: 5px;
+            color: #666;
+        }
+
+        /* Return Button */
+        .btn-container {
+            margin-top: 25px;
+            padding-left: 35%;
+        }
+
+        .btn-retour {
+            background-color: #00c0ef;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Footer domain */
+        .footer-domain {
+            margin-top: 50px;
+            font-size: 12px;
+            color: #888;
+            padding: 10px 20px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Upper Navigation Bar -->
+    <div class="navbar">
+        <div class="navbar-brand">
+            <!-- الشعار يوضع هنا -->
+            <img src="logo.png" alt="Logo">
+            <span>Relevés des notes du BAC</span>
+        </div>
+        <div class="navbar-links">
+            <a href="#"><span>&#127960;</span> Accueil</a>
+            <a href="#">العربية</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="page-title">Candidat</h1>
+
+        <div class="details-list">
+            <div class="row">
+                <div class="label">Numéro National d'Identification (NNI)</div>
+                <div class="value">8887216340</div>
+            </div>
+            <div class="row">
+                <div class="label">N° Dossier</div>
+                <div class="value">57960</div>
+            </div>
+            <div class="row">
+                <div class="label">Serie</div>
+                <div class="value">SN</div>
+            </div>
+            <div class="row">
+                <div class="label">Décision</div>
+                <div class="value">Admis</div>
+            </div>
+            <div class="row">
+                <div class="label">Centre en Arabe</div>
+                <div class="value" style="direction: rtl; text-align: right;">ثانوية الامتياز 2</div>
+            </div>
+            <div class="row">
+                <div class="label">Centre en Français</div>
+                <div class="value">Lycée Excellence 2</div>
+            </div>
+            <div class="row">
+                <div class="label">Nom en Arabe</div>
+                <div class="value" style="direction: rtl; text-align: right;">تبراك محمد سالم محمد المختار</div>
+            </div>
+            <div class="row">
+                <div class="label">Nom</div>
+                <div class="value">Tebrack Mohamed Salem Mohamed El Mokhtar</div>
+            </div>
+            <div class="row">
+                <div class="label">Moy Générale</div>
+                <div class="value">13.25</div>
+            </div>
+            <div class="row">
+                <div class="label">No ANONYME</div>
+                <div class="value">53272</div>
+            </div>
+            <div class="row">
+                <div class="label">No ETCC</div>
+                <div class="value">SN04</div>
+            </div>
+            <div class="row">
+                <div class="label">Lieu Naissance en Arabe</div>
+                <div class="value" style="direction: rtl; text-align: right;">عرفات</div>
+            </div>
+            <div class="row">
+                <div class="label">Lieu Naissance</div>
+                <div class="value">Arafat</div>
+            </div>
+            <div class="row">
+                <div class="label">Dat Naissance</div>
+                <div class="value">9 nov. 2008</div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn-retour">&larr; Retour</button>
+        </div>
+    </div>
+
+    <div class="footer-domain">
+        dec.education.gov.mr
+    </div>
+
+</body>
+</html>
